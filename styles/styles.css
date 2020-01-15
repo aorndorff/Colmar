@@ -1,0 +1,122 @@
+/* Global Styles */
+body{
+    background-color: ivory;
+    font-family: 'Roboto', sans-serif;
+    color: navy;
+    font-size: 16px;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Both devices */
+/* Layout */
+header {
+    background-color: #ffffff;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1000;
+  }
+
+
+/* Patterns */
+
+/* Text styles */
+a {
+    text-decoration: none;
+    color: #1b1818;
+    line-height: 1rem;
+  }
+  
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1rem;
+  }
+  
+/* Sections */
+/* Cover */
+
+/* Articles */
+
+/* Courses */
+
+/* Thesis */
+
+/* Desktop */
+
+    /* Patterns */
+
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    
+      #logo {
+        height: 32rem;
+        margin: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+      }
+    
+      nav {
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 1.5rem;
+      }
+    
+      li {
+        margin-left: 1rem;
+        font-size: 1rem;
+        display: inline;
+      }
+
+    /* Footer */
+    
+    /* Layout patterns */
+
+    /* Sections */
+        /* Cover */
+    
+        /* Articles */
+
+        /* Courses */
+
+        /* Thesis */
+
+/* Mobile */
+    /* Patterns */
+
+    /* Text Styles */
+    
+    /* Headers */
+    
+    /* Footer */
+    
+    /* Sectoions */
+        
+        /* Cover */
+    
+        /* Articles */
+
+        /* Courses */
+
+        /* Thesis */
+
