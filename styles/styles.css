@@ -9,6 +9,7 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 /* Both devices */
@@ -24,6 +25,31 @@ header {
     flex-direction: row;
     z-index: 1000;
   }
+  
+  main {
+    position: relative;
+    top: 4rem;
+  }
+  
+  /* Patterns */
+  button {
+    height: 4rem;
+    background-color: #303030;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    flex-shrink: 1;
+    border-radius: 2px;
+  }
+  
+  .white {
+    background-color: white;
+  }
+  
+  .dark {
+    background-color: #d8d8d8;
+  }
+  
 
 
 /* Patterns */
@@ -43,9 +69,23 @@ ul {
     line-height: 1rem;
   }
   
+.bold {
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+.light {
+    font-weight: lighter;
+    font-family: cursive;
+}
+
 /* Sections */
 /* Cover */
-
+.cover {
+    background-color: #d8d8d8;
+    width: 100%;
+    display: flex;
+  }
 /* Articles */
 
 /* Courses */
@@ -53,8 +93,15 @@ ul {
 /* Thesis */
 
 /* Desktop */
+@media only screen and (min-width: 801px) {
 
+    .mobile{
+        display: none;
+    }
     /* Patterns */
+    button{
+        width: 20rem;
+    }
 
     /* Header */
     header {
@@ -64,8 +111,8 @@ ul {
       }
     
       #logo {
-        height: 32rem;
-        margin: 24px;
+        height: 2rem;
+        margin: 1rem;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -77,15 +124,16 @@ ul {
         height: 4rem;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: right;
         justify-content: flex-end;
-        margin-right: 1.5rem;
+        margin-right: 1rem;
       }
     
       li {
         margin-left: 1rem;
         font-size: 1rem;
         display: inline;
+        align-items: right;
       }
 
     /* Footer */
@@ -94,12 +142,29 @@ ul {
 
     /* Sections */
         /* Cover */
-    
+        .cover h1 {
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+
+        .cover .pic img {
+            width: 100%;
+        }
+
+        .cover .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         /* Articles */
 
         /* Courses */
 
         /* Thesis */
+
+
+}
 
 /* Mobile */
     /* Patterns */
