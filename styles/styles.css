@@ -2,7 +2,7 @@
 body{
     background-color: ivory;
     font-family: 'Roboto', sans-serif;
-    color: navy;
+    color: #303030;
     font-size: 16px;
     line-height: 0;
     margin: 0;
@@ -147,14 +147,21 @@ ul {
             line-height: 3rem;
         }
 
+        .cover h2 {
+            font-size: 1.5rem;
+            text-justify: auto;
+        }
+
         .cover .pic img {
             width: 100%;
+            padding: 2rem 0rem 2rem 1.5rem;
         }
 
         .cover .description {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding-left: 3rem;
         }
 
         /* Articles */
