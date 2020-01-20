@@ -26,13 +26,13 @@ header {
     z-index: 1000;
   }
   
-  main {
+main {
     position: relative;
     top: 4rem;
   }
   
-  /* Patterns */
-  button {
+/* Patterns */
+button {
     height: 4rem;
     background-color: #303030;
     color: white;
@@ -42,19 +42,44 @@ header {
     border-radius: 2px;
   }
   
-  .white {
+.white {
     background-color: white;
   }
   
-  .dark {
+.dark {
     background-color: #d8d8d8;
   }
   
-
-
-/* Patterns */
-
 /* Text styles */
+h1{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+h2{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+h3{
+    font-size: 1rem;
+    color: gray;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-emphasis: underline;
+}
+
+.caption{
+    font-size: .9rem;
+    line-height: 1rem;
+    font-weight: bolder;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
 a {
     text-decoration: none;
     color: #1b1818;
@@ -80,6 +105,7 @@ ul {
 }
 
 /* Sections */
+
 /* Cover */
 .cover {
     background-color: #d8d8d8;
@@ -87,6 +113,11 @@ ul {
     display: flex;
   }
 /* Articles */
+.articles{
+    display: flex;
+}
+
+
 
 /* Courses */
 
@@ -139,6 +170,18 @@ ul {
     /* Footer */
     
     /* Layout patterns */
+    .left{
+        width: 60%;
+        padding: 2rem 1.5rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .right{
+        width: 40%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
 
     /* Sections */
         /* Cover */
@@ -150,6 +193,7 @@ ul {
         .cover h2 {
             font-size: 1.5rem;
             text-justify: auto;
+            line-height: 2rem;
         }
 
         .cover .pic img {
@@ -165,6 +209,9 @@ ul {
         }
 
         /* Articles */
+        .articles{
+            flex-direction: row;
+        }
 
         /* Courses */
 
