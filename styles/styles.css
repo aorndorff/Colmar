@@ -1,7 +1,7 @@
 /* Global Styles */
 body{
     background-color: ivory;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'open-sans' sans-serif;
     color: #303030;
     font-size: 16px;
     line-height: 0;
@@ -73,6 +73,7 @@ h3{
     font-size: .9rem;
     line-height: 1rem;
     font-weight: bolder;
+    margin: 0;
 }
 
 p{
@@ -113,13 +114,37 @@ ul {
     display: flex;
   }
 /* Articles */
-.articles{
+.articles {
     display: flex;
-}
+  }
+  
+.card_pic {
+    width: 100%;
+  }
+  
+.articles .right {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+  
+.articles .right .card_pic .description a {
+    color: #28BFB2;
+  }
+
+
 
 
 
 /* Courses */
+
+.courses h1 {
+    text-align: center;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+  }
 
 /* Thesis */
 
@@ -141,9 +166,9 @@ ul {
         justify-content: space-between;
       }
     
-      #logo {
-        height: 2rem;
-        margin: 1rem;
+    #logo {
+        height: 4rem;
+        margin: 0 1.5rem;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -151,7 +176,7 @@ ul {
         font-size: 1.2rem;
       }
     
-      nav {
+    nav {
         height: 4rem;
         display: flex;
         flex-direction: row;
@@ -160,28 +185,45 @@ ul {
         margin-right: 1rem;
       }
     
-      li {
+    li {
         margin-left: 1rem;
         font-size: 1rem;
-        display: inline;
-        align-items: right;
       }
 
     /* Footer */
     
     /* Layout patterns */
     .left{
-        width: 60%;
         padding: 2rem 1.5rem;
         flex-grow: 1;
         flex-shrink: 1;
     }
 
     .right{
-        width: 40%;
         flex-grow: 1;
         flex-shrink: 1;
     }
+    
+    .card_pic .photo {
+        width: 35%;
+        padding: 1rem;
+      }
+    
+    .card_pic .description {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    
+    .card_pic .description h2 {
+        line-height: normal;
+        margin: 0;
+      }
+    
+    .card_pic .description p {
+          margin-right: 5px;
+      }
 
     /* Sections */
         /* Cover */
@@ -209,9 +251,43 @@ ul {
         }
 
         /* Articles */
-        .articles{
+        .articles {
+            display: flex;
             flex-direction: row;
-        }
+            width: 100%;
+          }
+        
+        .articles .left{
+              width: 60%;
+          }
+
+        .articles .others{
+              width: 40%;
+          }
+
+        .articles .left .photo img {
+            width: 100%;
+            height: auto;
+          }
+        
+        .articles .other {
+            display: flex;
+            flex-direction: column;
+          }
+        
+        .articles .right .card_pic {
+            display: flex;
+            flex-direction: row;
+          }
+        
+        .articles .right .card_pic .photo {
+            width: 35%;
+          }
+        
+        .articles .right .card_pic .photo img {
+            width: 100%;
+            height: auto;
+          }
 
         /* Courses */
 
