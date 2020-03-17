@@ -9,7 +9,15 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
+}
+
+footer {
+    padding: 1rem 1.5rem;
+    position: relative;
+    top: 4rem;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid red;
 }
 
 /* Both devices */
@@ -148,6 +156,13 @@ ul {
 
 /* Thesis */
 
+.thesis {
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Desktop */
 @media only screen and (min-width: 801px) {
 
@@ -192,7 +207,19 @@ ul {
 
     /* Footer */
     
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer .links a {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+    
     /* Layout patterns */
+    
     .left{
         padding: 2rem 1.5rem;
         flex-grow: 1;
@@ -226,6 +253,7 @@ ul {
       }
 
     /* Sections */
+       
         /* Cover */
         .cover h1 {
             font-size: 3rem;
@@ -251,6 +279,7 @@ ul {
         }
 
         /* Articles */
+       
         .articles {
             display: flex;
             flex-direction: row;
@@ -289,12 +318,80 @@ ul {
             height: auto;
           }
 
-        /* Courses */
+        
+          /* Courses */
 
+.courses {
+    background-color: #d8d8d8;
+    padding: 2rem 3.5rem;
+}
+
+.courses .course {
+    width: 30%;
+    background-color: white;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 1rem;
+}
+
+.courses .row_above {
+    display: flex;
+    flex-direction: row;
+}
+
+.courses .row_below {
+    display: flex;
+    flex-direction: row;
+}
+
+.courses .row_above {
+    margin-bottom: 2rem;
+}
+
+.courses .course .photo {
+    width: 100%;
+}
+
+.courses .course .photo img {
+    width: 100%;
+}
+
+.course .description {
+    padding: 0 1rem;
+}
         /* Thesis */
 
-
+.thesis h1 {
+    text-align: center;
 }
+
+.thesis_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.thesis_content .left {
+    padding-top: 0;
+}
+
+.thesis_content .left .photo {
+    width: 100%;
+}
+
+.thesis_content .left .photo video {
+    width: 100%;
+}
+
+.thesis_content .others .card_pic .photo {
+    width: 35%;
+}
+
+.thesis_content .others .card_pic .photo img {
+    width: 100%;
+    height: auto;
+}
+
 
 /* Mobile */
     /* Patterns */
@@ -314,4 +411,3 @@ ul {
         /* Courses */
 
         /* Thesis */
-
