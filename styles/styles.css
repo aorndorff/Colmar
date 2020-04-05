@@ -161,6 +161,7 @@ ul {
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 /* Desktop */
@@ -266,7 +267,7 @@ ul {
             line-height: 2rem;
         }
 
-        .cover .pic img {
+        .cover .left_pic img {
             width: 100%;
             padding: 2rem 0rem 2rem 1.5rem;
         }
@@ -373,6 +374,12 @@ ul {
 
 .thesis_content .left {
     padding-top: 0;
+    width: 60%;
+}
+
+.thesis_content .others {
+    padding-top: 0;
+    width: 40%;
 }
 
 .thesis_content .left .photo {
@@ -381,6 +388,12 @@ ul {
 
 .thesis_content .left .photo video {
     width: 100%;
+}
+
+.thesis_content .others .card_pic {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .thesis_content .others .card_pic .photo {
@@ -394,20 +407,75 @@ ul {
 
 
 /* Mobile */
+@media only screen and (max width: 800px) {
+    .desktop {
+        display: none;
+    }
+
     /* Patterns */
+    button {
+        display: none;
+    }
+
+    .dark {
+        background-color: white;
+    }
 
     /* Text Styles */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        line-height: 1.6rem;
+    }
     
     /* Headers */
     
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1.5rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
     /* Footer */
+
+    footer {
+        padding-top: 2.5rem;
+    }
+
+    footer .links {
+        display: none;
+    }
     
     /* Sectoions */
         
         /* Cover */
     
+.cover {
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.cover .pic {
+    width: 100%;
+}
+
+.cover .pic img {
+    width: 100%;
+}
+
+.cover .description {
+    padding: 0 1rem:
+}
+
         /* Articles */
 
         /* Courses */
 
         /* Thesis */
+
+}
