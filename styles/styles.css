@@ -17,7 +17,7 @@ footer {
     top: 4rem;
     display: flex;
     flex-direction: row;
-    border-top: 1px solid red;
+    border-top: 1px solid gray;
 }
 
 /* Both devices */
@@ -121,6 +121,7 @@ ul {
     width: 100%;
     display: flex;
   }
+
 /* Articles */
 .articles {
     display: flex;
@@ -138,10 +139,6 @@ ul {
 .articles .right .card_pic .description a {
     color: #28BFB2;
   }
-
-
-
-
 
 /* Courses */
 
@@ -164,12 +161,17 @@ ul {
     background-color: white;
 }
 
+.thesis h1 {
+    text-align: center;
+}
+
 /* Desktop */
 @media only screen and (min-width: 801px) {
 
     .mobile{
         display: none;
     }
+
     /* Patterns */
     button{
         width: 20rem;
@@ -212,6 +214,7 @@ ul {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        background-color: white;
     }
 
     footer .links a {
@@ -322,99 +325,101 @@ ul {
         
           /* Courses */
 
-.courses {
+    .courses {
     background-color: #d8d8d8;
     padding: 2rem 3.5rem;
-}
+    }
 
-.courses .course {
+    .courses .course {
     width: 30%;
     background-color: white;
     flex-grow: 1;
     flex-shrink: 1;
     margin: 0 1rem;
-}
+    }
 
-.courses .row_above {
-    display: flex;
-    flex-direction: row;
-}
+    .courses .row_above {
+        display: flex;
+        flex-direction: row;
+    }
 
-.courses .row_below {
-    display: flex;
-    flex-direction: row;
-}
+    .courses .row_below {
+        display: flex;
+        flex-direction: row;
+    }
 
-.courses .row_above {
-    margin-bottom: 2rem;
-}
+    .courses .row_above {
+        margin-bottom: 2rem;
+    }
 
-.courses .course .photo {
-    width: 100%;
-}
+    .courses .course .photo {
+        width: 100%;
+    }
 
-.courses .course .photo img {
-    width: 100%;
-}
+    .courses .course .photo img {
+        width: 100%;
+    }
 
-.course .description {
-    padding: 0 1rem;
-}
-        /* Thesis */
+    .course .description {
+        padding: 0 1rem;
+    }
+            /* Thesis */
 
-.thesis h1 {
-    text-align: center;
-}
+    .thesis h1 {
+        text-align: center;
+    }
 
-.thesis_content {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
+    .thesis_content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
 
-.thesis_content .left {
-    padding-top: 0;
-    width: 60%;
-}
+    .thesis_content .left {
+        padding-top: 0;
+        width: 60%;
+    }
 
-.thesis_content .others {
-    padding-top: 0;
-    width: 40%;
-}
+    .thesis_content .others {
+        padding-top: 0;
+        width: 40%;
+    }
 
-.thesis_content .left .photo {
-    width: 100%;
-}
+    .thesis_content .left .photo {
+        width: 100%;
+    }
 
-.thesis_content .left .photo video {
-    width: 100%;
-}
+    .thesis_content .left .photo video {
+        width: 100%;
+    }
 
-.thesis_content .others .card_pic {
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-}
+    .thesis_content .others .card_pic {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
 
-.thesis_content .others .card_pic .photo {
-    width: 35%;
-}
+    .thesis_content .others .card_pic .photo {
+        width: 35%;
+    }
 
-.thesis_content .others .card_pic .photo img {
-    width: 100%;
-    height: auto;
+    .thesis_content .others .card_pic .photo img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
 /* Mobile */
-@media only screen and (max width: 800px) {
+@media only screen and (max-width: 800px) {
+    
     .desktop {
         display: none;
     }
 
     /* Patterns */
     button {
-        display: none;
+        width: 100%;
     }
 
     .dark {
@@ -432,14 +437,14 @@ ul {
     
     /* Headers */
     
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 1.5rem;
-    width: 100%;
-    justify-content: space-between;
-}
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 1.5rem;
+        width: 100%;
+        justify-content: space-between;
+    }
 
     /* Footer */
 
@@ -451,31 +456,93 @@ nav {
         display: none;
     }
     
-    /* Sectoions */
+    /* Sections */
         
         /* Cover */
     
-.cover {
-    flex-direction: column;
-    padding-bottom: 2rem;
-}
+    .cover {
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
 
-.cover .pic {
-    width: 100%;
-}
+    .cover .left_pic {
+        width: 100%;
+    }
 
-.cover .pic img {
-    width: 100%;
-}
+    .cover .left_pic img {
+        width: 100%;
+    }
 
-.cover .description {
-    padding: 0 1rem:
-}
+    .cover .description {
+        padding: 0 1rem:
+    }
 
-        /* Articles */
+    /* Articles */
+
+    .articles .left {
+        display: none;
+    }
+
+    .articles .others {
+        padding: 1rem 1rem 2rem 1rem;
+        width: 100%;
+    }
+
+    .articles .others .white {
+        margin-bottom: 4rem;
+    }
+
+    .articles .others .card_pic .photo {
+        width: 100%;
+    }
+
+    .articles .others .card_pic .photo img {
+        width: 100%;
+    }
 
         /* Courses */
+    
+    .courses {
+        margin-bottom: 1.5rem;
+    }
+
+    .courses .row_above,
+    .courses .row_below {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .courses .course {
+        background-color: #d8d8d8;
+        padding: 1rem 1rem 1.5rem 1rem;
+        margin: 0 1rem 0.5rem 1rem;
+    }
+
+    .course .photo {
+        display: none;
+    }
+
+    .course .description h3,
+    .course .description p {
+        display: none;
+    }
 
         /* Thesis */
+
+    .thesis .others {
+        display: none;
+    }
+
+    .thesis .left {
+        width: 100%;
+    }
+
+    .thesis .left video {
+        width: 100%;
+    }
+
+    .thesis .left .description {
+        display: none;
+    }
 
 }
